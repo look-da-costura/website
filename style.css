@@ -54,8 +54,32 @@ h2 {
 /*MAIN */
 
 /*FOOTER */
+#footer {
+  background-color: var(--purple);
+  padding: 2rem 1rem;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+}
 
-/*** */
+#footer > img {
+  margin: 0 auto 2rem;
+}
+
+.developer-credits {
+  margin-top: 1.5rem;
+}
+
+.developer-name {
+  color: var(--pink) !important;
+  font-weight: bold;
+}
+
+.developer-name:visited {
+  color: currentColor;
+}
+
+/*************************************************************************************/
 
 /*----- DESKTOP ----- */
 
@@ -70,14 +94,8 @@ h2 {
 }
 
 @media (min-width: 1024px) {
-  /*GENERAL */
-
-  /*HEADER */
+  /* For hidding the hamburger menu icon when it's a desktop resolution */
   .hamburger-menu__icon {
     display: none;
   }
-
-  /*MAIN */
-
-  /*FOOTER */
 }
