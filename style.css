@@ -47,6 +47,30 @@ h2 {
 }
 
 /*HEADER */
+#header {
+  background-color: var(--blue);
+  position: relative;
+  height: 8.438rem;
+}
+
+#header > img {
+  margin: 0 auto;
+}
+
+.hamburger-menu__icon {
+  padding: 2rem;
+  position: absolute;
+  top: 20%;
+}
+
+.hamburger-menu__icon > div{
+  height: 0.3rem;
+  width: 2.5rem;
+  background-color: var(--purple);
+  margin: 0.2rem;
+  border-radius: 1rem;
+}
+
 .hamburger-menu__content {
   display: none;
 }
