@@ -46,6 +46,13 @@ h2 {
   font-family: 'Merienda', cursive;
 }
 
+.card {
+  background-color: var(--pink);
+  margin: 2rem;
+  box-shadow: -10px 10px var(--gold);
+  padding: 1rem;
+}
+
 /*HEADER */
 #header {
   background-color: var(--blue);
