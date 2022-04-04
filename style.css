@@ -80,6 +80,7 @@ h2 {
 }
 
 .section__title {
+  letter-spacing: 1px;
   margin-left: 0.6rem;
   position: relative;
   z-index: 3;
@@ -185,6 +186,28 @@ h2 {
   display: grid;
   place-items: center;
   background-color: #f1f1f1;
+}
+
+.contact {
+  background-color: var(--blue);
+}
+
+.contact__social-media-area {
+  margin-bottom: 2rem;
+}
+
+.contact__social-media-area > span {
+  color: var(--white);
+}
+
+.map-container {
+  margin-bottom: 2rem;
+}
+
+.contact__budget-request {
+  font-size: 1.5rem;
+  font-family: 'Merienda', cursive;
+  color: var(--purple);
 }
 
 /*FOOTER */
