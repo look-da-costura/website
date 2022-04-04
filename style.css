@@ -194,10 +194,19 @@ h2 {
 
 .contact__social-media-area {
   margin-bottom: 2rem;
+  font-size: 0.875rem;
 }
 
-.contact__social-media-area > span {
+.contact__social-media-area div {
+  display: flex;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contact__social-media-area span {
   color: var(--white);
+  align-items: center;
 }
 
 .map-container {
