@@ -48,7 +48,7 @@ h2 {
 
 .card {
   background-color: var(--pink);
-  margin: 2rem;
+  margin-left: 0.5rem;
   box-shadow: -10px 10px var(--gold);
   padding: 1rem;
 }
@@ -61,6 +61,7 @@ h2 {
 
 .title-wrapper {
   position: relative;
+  margin-bottom: 1.5rem;
 }
 
 .title-effect {
@@ -122,7 +123,7 @@ h2 {
 }
 
 .about-us > p:first-of-type {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .what-we-do {
