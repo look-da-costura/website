@@ -87,6 +87,30 @@ h2 {
   padding: 2rem 1rem;
 }
 
+.what-we-do h5 {
+  color: var(--purple);
+}
+
+.what-we-do ul {
+  margin: 0.625rem 0 2.5rem;
+}
+
+.what-we-do ul li::before {
+  content: '';
+  height: 0.125rem;
+  width: 1.25rem;
+  background-color: var(--gold);
+  display: inline-block;
+  margin-right: 0.625rem;
+}
+
+.what-we-do ul li {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  line-height: 2;
+}
+
 /*FOOTER */
 #footer {
   background-color: var(--purple);
