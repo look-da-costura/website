@@ -188,6 +188,38 @@ h2 {
   background-color: #f1f1f1;
 }
 
+.the-artisan {
+  background-color: var(--pink);
+  align-items: center;
+}
+
+.the-artisan h3 {
+  color: var(--purple);
+  font-size: 2rem;
+  margin: 1.5rem 0 1rem;
+  position: relative;
+  z-index: 5;
+}
+
+.the-artisan h3::before {
+  content: '“';
+  color: var(--pink);
+  display: block;
+  font-family: 'Merienda';
+  font-size: 10.938rem;
+  position: absolute;
+  z-index: -1;
+  top: -3.438rem;
+  left: -0.625rem;
+  opacity: 0.5;
+}
+
+.the-artisan p {
+  color: var(--white);
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
 .contact {
   background-color: var(--blue);
 }
