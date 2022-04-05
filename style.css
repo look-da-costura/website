@@ -160,13 +160,49 @@ h2 {
 .hamburger-menu__content {
   display: block;
   position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
   z-index: 10;
   background-color: var(--green);
   height: 100vh;
   width: 85%;
   box-shadow: 15px 0 15px #00000050;
   padding: 2rem;
+  transition: width 300ms ease-in;
+  animation: showMenu 300ms forwards;
 }
+
+@keyframes showMenu {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: initial;
+  }
+}
+
+@keyframes hideMenuAnimation {
+  0% {
+    transform: initial;
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.hide-menu-animation {
+  box-shadow: none;
+  animation: hideMenuAnimation 300ms forwards;
+}
+
+.hide-menu {
+  display: none;
+}
+
 
 .hamburger-menu__content > img {
   margin: 0 auto;
@@ -215,6 +251,7 @@ h2 {
 .nav-menu > ul li a {
   font-family: inherit;
   position: relative;
+  color: currentColor;
 }
 
 .nav-menu > ul li a:visited {
@@ -301,6 +338,10 @@ h2 {
 .the-artisan {
   background-color: var(--pink);
   align-items: center;
+}
+
+.the-artisan img {
+  margin: 0 auto;
 }
 
 .the-artisan h3 {
