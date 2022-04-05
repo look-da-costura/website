@@ -48,21 +48,25 @@
 
   <header id="header">
     <div class="hamburger-menu">
-      <span class="hamburger-menu__icon">
+      <span class="hamburger-menu__icon" role="button">
         <div></div>
         <div></div>
         <div></div>
       </span>
-      <div class="hamburger-menu__content">
-        <img src="" alt="Logo da marca Look da Costura">
-        <nav>
+      <div class="hamburger-menu__content hide-menu">
+        <div class="hamburguer-menu__close-icon">
+          <span></span>
+          <span></span>
+        </div>
+        <img src="assets/images/logo-header.svg" alt="Logo da marca Look da Costura">
+        <nav class="nav-menu">
           <ul>
-            <li>Sobre nós</li>
-            <li>O que fazemos</li>
-            <li>Galeria</li>
-            <li>A artesã</li>
-            <li>Loja</li>
-            <li>Contatos</li>
+            <li><a href="#about-us">Sobre nós</a></li>
+            <li><a href="#what-we-do">O que fazemos</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#the-artisan">A artesã</a></li>
+            <li><a href="https://www.instagram.com/lookdacostura" target="_blank">Loja</a></li>
+            <li><a href="#contact">Contatos</a></li>
           </ul>
         </nav>
       </div>
@@ -73,7 +77,7 @@
   </header>
 
   <main id="main">
-    <section class="section about-us">
+    <section class="section about-us" id="about-us">
       <div class="title-wrapper">
         <h2 class="section__title" data-title-color="var(--white)">Sobre nós</h2>
         <div class="title-effect" data-title-background-color="var(--blue)"></div>
@@ -87,7 +91,7 @@
         <span class="divider__icon"></span>
       </div>
     </div>
-    <section class="section what-we-do">
+    <section class="section what-we-do" id="what-we-do">
       <div class="title-wrapper">
         <h2 class="section__title" data-title-color="var(--purple)">O que fazemos</h2>
         <div class="title-effect" data-title-background-color="var(--pink)"></div>
@@ -115,7 +119,7 @@
         <span class="divider__icon"></span>
       </div>
     </div>
-    <section class="section gallery">
+    <section class="section gallery" id="gallery">
       <div class="title-wrapper">
         <h2 class="section__title" data-title-color="var(--purple)">Galeria</h2>
         <div class="title-effect" data-title-background-color="var(--blue)"></div>
@@ -136,7 +140,7 @@
         <span class="divider__icon"></span>
       </div>
     </div>
-    <section class="section the-artisan">
+    <section class="section the-artisan" id="the-artisan">
       <div class="title-wrapper">
         <h2 class="section__title" data-title-color="var(--purple)">A artesã</h2>
         <div class="title-effect" data-title-background-color="var(--dark-pink)"></div>
@@ -152,7 +156,7 @@
         <span class="divider__icon"></span>
       </div>
     </div>
-    <section class="section contact">
+    <section class="section contact" id="contact">
       <div class="title-wrapper">
         <h2 class="section__title" data-title-color="var(--white)">Contatos</h2>
         <div class="title-effect" data-title-background-color="var(--dark-pink)"></div>

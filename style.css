@@ -72,7 +72,6 @@ h2 {
 
 .title-effect {
   position: absolute;
-  background-color: red;
   width: 5.5rem;
   height: 1.1rem;
   bottom: 0;
@@ -159,7 +158,108 @@ h2 {
 }
 
 .hamburger-menu__content {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: var(--green);
+  height: 100vh;
+  width: 85%;
+  box-shadow: 15px 0 15px #00000050;
+  padding: 2rem;
+  transition: width 300ms ease-in;
+  animation: showMenu 300ms forwards;
+}
+
+@keyframes showMenu {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: initial;
+  }
+}
+
+@keyframes hideMenuAnimation {
+  0% {
+    transform: initial;
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.hide-menu-animation {
+  box-shadow: none;
+  animation: hideMenuAnimation 300ms forwards;
+}
+
+.hide-menu {
   display: none;
+}
+
+
+.hamburger-menu__content > img {
+  margin: 0 auto;
+  width: 100px;
+}
+
+.hamburguer-menu__close-icon {
+  padding: 1rem 0.5rem;
+  display: inline-block;
+}
+
+.hamburguer-menu__close-icon > span:first-of-type {
+  width: 1.5rem;
+  height: 3px;
+  background-color: var(--purple);
+  display: block;
+  border-radius: 1rem;
+  transform: rotate(45deg);
+}
+
+.hamburguer-menu__close-icon > span:last-of-type { 
+  width: 1.5rem;
+  height: 3px;
+  background-color: var(--purple);
+  display: block;
+  border-radius: 1rem;
+  transform: rotate(-45deg) translate3d(2.5px, -2px, 0);
+}
+
+.nav-menu {
+  margin-top: 2rem;
+}
+
+.nav-menu > ul li {
+  font-family: 'Merienda', cursive;
+  color: var(--purple);
+  font-weight: bold;
+  padding: 0.5rem;
+  padding-left: 0;
+}
+
+.nav-menu > ul li + li {
+  margin-top: 0.5rem;
+}
+
+.nav-menu > ul li a {
+  font-family: inherit;
+  position: relative;
+  color: currentColor;
+}
+
+.nav-menu > ul li a:visited {
+  color: currentColor;
+}
+
+.nav-menu > ul li a:active {
+  color: var(--blue);
 }
 
 /*MAIN */
@@ -238,6 +338,10 @@ h2 {
 .the-artisan {
   background-color: var(--pink);
   align-items: center;
+}
+
+.the-artisan img {
+  margin: 0 auto;
 }
 
 .the-artisan h3 {
