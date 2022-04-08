@@ -77,43 +77,49 @@
   </header>
 
   <main id="main">
-    <section class="section about-us" id="about-us">
-      <div class="title-wrapper">
-        <h2 class="section__title" data-title-color="var(--white)">Sobre nós</h2>
-        <div class="title-effect" data-title-background-color="var(--blue)"></div>
+    <div class="about-us-what-we-do-wrapper">
+      <section class="section about-us" id="about-us">
+        <div class="title-wrapper">
+          <h2 class="section__title" data-title-color="var(--white)">Sobre nós</h2>
+          <div class="title-effect" data-title-background-color="var(--blue)"></div>
+        </div>
+      
+        <p>Somos uma loja de costura criativa, com <mark class="highlight">produtos 100% artesanais</mark>!</p>
+        <p>Por aqui na Look da Costura tudo é feito à mão, com muito carinho e dedicação para você. Juntamos criatividade, moda e qualidade para criar nossos produtos.</p>
+      </section>
+      <div class="divider">
+        <div class="divider__wrapper">
+          <span class="divider__icon"></span>
+        </div>
       </div>
-
-      <p>Somos uma loja de costura criativa, com <mark class="highlight">produtos 100% artesanais</mark>!</p>
-      <p>Por aqui na Look da Costura tudo é feito à mão, com muito carinho e dedicação para você. Juntamos criatividade, moda e qualidade para criar nossos produtos.</p>
-    </section>
-    <div class="divider">
-      <div class="divider__wrapper">
-        <span class="divider__icon"></span>
-      </div>
+      <section class="section what-we-do" id="what-we-do">
+        <div class="title-wrapper">
+          <h2 class="section__title" data-title-color="var(--purple)">O que fazemos</h2>
+          <div class="title-effect" data-title-background-color="var(--pink)"></div>
+        </div>
+        <div class="card" data-card-background-color="var(--pink)" data-card-shadow-color="var(--gold)">
+          <div>
+            <h5>Linha casa</h5>
+            <ul>
+              <li>Toalhas de mesa</li>
+              <li>Sousplat</li>
+              <li>Jogo Americano</li>
+              <li>Organizador de mala</li>
+            </ul>
+          </div>
+      
+          <div>
+            <h5>Linha dia a dia</h5>
+            <ul>
+              <li>Bolsa</li>
+              <li>Carteira</li>
+              <li>Necessaire</li>
+              <li>Bolsa tiracolo</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
-    <section class="section what-we-do" id="what-we-do">
-      <div class="title-wrapper">
-        <h2 class="section__title" data-title-color="var(--purple)">O que fazemos</h2>
-        <div class="title-effect" data-title-background-color="var(--pink)"></div>
-      </div>
-      <div class="card" data-card-background-color="var(--pink)" data-card-shadow-color="var(--gold)">
-        <h5>Linha casa</h5>
-        <ul>
-          <li>Toalhas de mesa</li>
-          <li>Sousplat</li>
-          <li>Jogo Americano</li>
-          <li>Organizador de mala</li>
-        </ul>
-
-        <h5>Linha dia a dia</h5>
-        <ul>
-          <li>Bolsa</li>
-          <li>Carteira</li>
-          <li>Necessaire</li>
-          <li>Bolsa tiracolo</li>
-        </ul>
-      </div>
-    </section>
     <div class="divider">
       <div class="divider__wrapper">
         <span class="divider__icon"></span>
@@ -128,6 +134,9 @@
       <div class="card" data-card-background-color="var(--blue)" data-card-shadow-color="var(--dark-pink)">
         <!-- Images will be put here after the development to get the most recent products -->
         <div class="images-container">
+          <div class="image-placeholder">🙈</div>
+          <div class="image-placeholder">🙉</div>
+          <div class="image-placeholder">🙊</div>
           <div class="image-placeholder">🙈</div>
           <div class="image-placeholder">🙉</div>
           <div class="image-placeholder">🙊</div>
@@ -147,8 +156,10 @@
       </div>
       <div class="card" data-card-background-color="var(--dark-pink)" data-card-shadow-color="var(--gold)">
         <img src="assets/images/the-artisan.png" alt="foto da artesã Márcia">
-        <h3>Sempre com foco no aprendizado</h3>
-        <p>Nossa querida artesã Marcia vem criando com muito amor produtos exclusivos e de qualidade.</p>
+        <div>
+          <h3>Sempre com foco no aprendizado</h3>
+          <p>Nossa querida artesã Marcia vem criando com muito amor produtos exclusivos e de qualidade.</p>
+        </div>
       </div>
     </section>
     <div class="divider">
@@ -161,29 +172,33 @@
         <h2 class="section__title" data-title-color="var(--white)">Contatos</h2>
         <div class="title-effect" data-title-background-color="var(--dark-pink)"></div>
       </div>
-      <div class="contact__social-media-area">
-        <div>
-          <img src="./assets/icons/instagram.svg" alt="logo do instagram" width="35">
-          <span>@lookdacostura</span>
+      <div class="contact__container">
+        <div class="concact-infos-map-wrapper">
+          <div class="contact__social-media-area">
+            <div>
+              <img src="./assets/icons/instagram.svg" alt="logo do instagram" width="35">
+              <span>@lookdacostura</span>
+            </div>
+            <div>
+              <img src="./assets/icons/whatsapp.svg" alt="logo do whatsapp" width="35">
+              <span>(11) 98783-4868</span>
+            </div>
+            <div>
+              <img src="./assets/icons/facebook.svg" alt="logo do facebook" width="30" style="padding-left: 0.313rem;">
+              <span style="margin-left: 0.313rem;">@lookdacostura</span>
+            </div>
+            <div>
+              <img src="./assets/icons/e-mail.svg" alt="ícone de e-mail" width="33" style="padding-left: 0.313rem;">
+              <span style="margin-left: 0.188rem;">contato@lookdacostura.com.br</span>
+            </div>
+          </div>
+          <div class="map-container">
+            <img src="./assets//images/look-da-costura-maps.png" alt="localização da Look da Costura no mapa">
+          </div>
         </div>
-        <div>
-          <img src="./assets/icons/whatsapp.svg" alt="logo do whatsapp" width="35">
-          <span>(11) 98783-4868</span>
+        <div class="card" data-card-background-color="var(--green)" data-card-shadow-color="var(--gold)">
+          <span class="contact__budget-request">Não perca mais tempo, solicite um orçamento já! 😍</span>
         </div>
-        <div>
-          <img src="./assets/icons/facebook.svg" alt="logo do facebook" width="30" style="padding-left: 0.313rem;">
-          <span style="margin-left: 0.313rem;">@lookdacostura</span>
-        </div>
-        <div>
-          <img src="./assets/icons/e-mail.svg" alt="ícone de e-mail" width="33" style="padding-left: 0.313rem;">
-          <span style="margin-left: 0.188rem;">contato@lookdacostura.com.br</span>
-        </div>
-      </div>
-      <div class="map-container">
-        <img src="./assets//images/look-da-costura-maps.png" alt="localização da Look da Costura no mapa">
-      </div>
-      <div class="card" data-card-background-color="var(--green)" data-card-shadow-color="var(--gold)">
-        <span class="contact__budget-request">Não perca mais tempo, solicite um orçamento já! 😍</span>
       </div>
     </section>
   </main>
