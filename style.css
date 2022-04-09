@@ -554,6 +554,10 @@ h2 {
     margin-top: 10px;
   }
 
+  .desktop-menu {
+    display: block;
+  }
+
   .nav-desktop-menu {
     margin-right: 55px;
   }
