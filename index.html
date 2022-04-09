@@ -38,7 +38,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 
@@ -47,6 +49,8 @@
 <body>
 
   <header id="header">
+    <img src="assets/images/logo-header.svg" alt="Logo da marca Look da Costura">
+
     <div class="hamburger-menu">
       <span class="hamburger-menu__icon" role="button">
         <div></div>
@@ -59,7 +63,7 @@
           <span></span>
         </div>
         <img src="assets/images/logo-header.svg" alt="Logo da marca Look da Costura">
-        <nav class="nav-menu">
+        <nav class="nav-hamburguer-menu">
           <ul>
             <li><a href="#about-us">Sobre nós</a></li>
             <li><a href="#what-we-do">O que fazemos</a></li>
@@ -71,9 +75,17 @@
         </nav>
       </div>
     </div>
-
-    <img src="assets/images/logo-header.svg" alt="Logo da marca Look da Costura">
-
+    <div class="desktop-menu">
+      <nav class="nav-desktop-menu">
+        <ul>
+          <li><a href="#about-us">Sobre nós</a></li>
+          <li><a href="#what-we-do">O que fazemos</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#the-artisan">A artesã</a></li>
+          <li><a href="https://www.instagram.com/lookdacostura" target="_blank">Loja</a></li>
+          <li><a href="#contact">Contatos</a></li>
+        </ul>
+    </div>
   </header>
 
   <main id="main">
@@ -83,9 +95,10 @@
           <h2 class="section__title" data-title-color="var(--white)">Sobre nós</h2>
           <div class="title-effect" data-title-background-color="var(--blue)"></div>
         </div>
-      
+
         <p>Somos uma loja de costura criativa, com <mark class="highlight">produtos 100% artesanais</mark>!</p>
-        <p>Por aqui na Look da Costura tudo é feito à mão, com muito carinho e dedicação para você. Juntamos criatividade, moda e qualidade para criar nossos produtos.</p>
+        <p>Por aqui na Look da Costura tudo é feito à mão, com muito carinho e dedicação para você. Juntamos
+          criatividade, moda e qualidade para criar nossos produtos.</p>
       </section>
       <div class="divider">
         <div class="divider__wrapper">
@@ -107,7 +120,7 @@
               <li>Organizador de mala</li>
             </ul>
           </div>
-      
+
           <div>
             <h5>Linha dia a dia</h5>
             <ul>
@@ -142,7 +155,9 @@
           <div class="image-placeholder">🙊</div>
         </div>
       </div>
-      <p>Ficou curioso? Acompanhe todo o nosso trabalho mais recente pelo instagram <a href="https://www.instagram.com/lookdacostura" target="_blank"><mark class="highlight--dark">@lookdacostura</mark></a>.</p>
+      <p>Ficou curioso? Acompanhe todo o nosso trabalho mais recente pelo instagram <a
+          href="https://www.instagram.com/lookdacostura" target="_blank"><mark
+            class="highlight--dark">@lookdacostura</mark></a>.</p>
     </section>
     <div class="divider">
       <div class="divider__wrapper">
@@ -207,8 +222,11 @@
     <img src="./assets/images/logo-footer.svg" alt="Logo da marca Look da Costura" width="100">
     <p>Copyright &copy; Look da Costura. Todos os direitos revervados.</p>
     <div class="developer-credits">
-      <p>Pensado e idealizado por <a class="developer-name" href="https://www.instagram.com/mrmarcianf" target="_blank">Marcia</a> e <a class="developer-name" href="http://thaisnsouza.com" target="_blank">Thais</a> </p>
-      <p>Desenvolvido por <a class="developer-name" href="https://github.com/csvinicius" target="_blank">csvinicius</a> e <a class="developer-name" href="https://github.com/TechWilli" target="_blank">TechWilli</a></p>
+      <p>Pensado e idealizado por <a class="developer-name" href="https://www.instagram.com/mrmarcianf"
+          target="_blank">Marcia</a> e <a class="developer-name" href="http://thaisnsouza.com" target="_blank">Thais</a>
+      </p>
+      <p>Desenvolvido por <a class="developer-name" href="https://github.com/csvinicius" target="_blank">csvinicius</a>
+        e <a class="developer-name" href="https://github.com/TechWilli" target="_blank">TechWilli</a></p>
     </div>
   </footer>
 </body>

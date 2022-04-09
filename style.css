@@ -144,6 +144,10 @@ h2 {
   margin: 0 auto;
 }
 
+.desktop-menu {
+  display: none;
+}
+
 .hamburger-menu__icon {
   padding: 2rem 2rem 2rem 1.5rem;
   position: absolute;
@@ -233,11 +237,11 @@ h2 {
   transform: rotate(-45deg) translate3d(2.5px, -2px, 0);
 }
 
-.nav-menu {
+.nav-hamburguer-menu {
   margin-top: 2rem;
 }
 
-.nav-menu > ul li {
+.nav-hamburguer-menu > ul li {
   font-family: 'Merienda', cursive;
   color: var(--purple);
   font-weight: bold;
@@ -245,21 +249,21 @@ h2 {
   padding-left: 0;
 }
 
-.nav-menu > ul li + li {
+.nav-hamburguer-menu > ul li + li {
   margin-top: 0.5rem;
 }
 
-.nav-menu > ul li a {
+.nav-hamburguer-menu > ul li a {
   font-family: inherit;
   position: relative;
   color: currentColor;
 }
 
-.nav-menu > ul li a:visited {
+.nav-hamburguer-menu > ul li a:visited {
   color: currentColor;
 }
 
-.nav-menu > ul li a:active {
+.nav-hamburguer-menu > ul li a:active {
   color: var(--blue);
 }
 
@@ -448,6 +452,9 @@ h2 {
   }
 
   /*HEADER */
+  .desktop-menu {
+    display: none;
+  }
 
   /*MAIN */
   .section {
@@ -534,5 +541,37 @@ h2 {
   /* For hidding the hamburger menu icon when it's a desktop resolution */
   .hamburger-menu__icon {
     display: none;
+  }
+
+  #header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+  }
+
+  #header > img {
+    margin-left: 65px;
+    margin-top: 10px;
+  }
+
+  .nav-desktop-menu {
+    margin-right: 55px;
+  }
+  
+  .nav-desktop-menu > ul {
+    display: flex;
+  }
+
+  .nav-desktop-menu > ul li {
+    font-family: 'Merienda', cursive;
+    color: var(--purple);
+    font-weight: bold;
+    margin-left: 2rem;
+  }
+
+  .nav-desktop-menu > ul li a {
+    font-family: inherit;
+    position: relative;
+    color: currentColor;
   }
 }
