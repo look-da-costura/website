@@ -380,6 +380,10 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.the-artisan__quote {
+  margin: .5rem;
+}
+
 .contact {
   background-color: var(--blue);
 }
@@ -399,6 +403,7 @@ h2 {
 .contact__social-media-area span {
   color: var(--white);
   align-items: center;
+  line-break: anywhere;
 }
 
 .map-container {
@@ -471,12 +476,10 @@ h2 {
 
   .about-us {
     width: 40%;
-    padding: 5rem;
   }
 
   .what-we-do {
     width: 60%;
-    padding: 5rem
   }
 
   .what-we-do .card {
@@ -511,22 +514,16 @@ h2 {
     place-items: center;
     background-color: #f1f1f1;
   }
-
-  .the-artisan .card {
-    width: 50%;
-    display: flex;
-    gap: 2rem;
-    padding: 3rem;
-    margin: 0 auto;
-  }
   
   .contact__container {
     width: 80%;
+    max-width: 1000px;
   }
 
   .concact-infos-map-wrapper {
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
   }
 
   .contact .card {
@@ -577,5 +574,21 @@ h2 {
     font-family: inherit;
     position: relative;
     color: currentColor;
+  }
+
+  .about-us, .what-we-do {
+    padding: 5rem;
+  }
+}
+
+/* Breakpoints for specific elements */
+@media (min-width: 1300px) {
+  .the-artisan .card {
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    gap: 2rem;
+    padding: 3rem;
+    margin: 0 auto;
   }
 }
