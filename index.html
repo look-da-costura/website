@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Look da Costura</title>
-  <meta name="description" content="breve descrição do site" />
+  <meta name="description" content="Somos uma loja de costura criativa, com produtos 100% artesanais. Por aqui na Look da Costura tudo é feito à mão, com muito carinho e dedicação para você. Juntamos criatividade, moda e qualidade para criar nossos produtos." />
   <meta http-equiv="content-language" lang="pt-br">
   <!-- para fins de compartilhamento do link do site em whatsapp e mídias -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Look da Costura" />
-  <meta property="og:description" content="breve descrição (mesma da primeira description)" />
+  <meta property="og:description" content="Somos uma loja de costura criativa, com produtos 100% artesanais. Por aqui na Look da Costura tudo é feito à mão, com muito carinho e dedicação para você. Juntamos criatividade, moda e qualidade para criar nossos produtos." />
   <meta property="og:url" content="https://lookdacostura.com.br/" />
   <meta property="og:image" content="https://lookdacostura.com.br/assets/images/og-image.png" />
   <meta property="og:image:alt" content="logo Look da Costura" />
@@ -37,54 +38,207 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 
 </head>
+
 <body>
 
   <header id="header">
-    <img src="" alt="Logo da marca Look da Costura">
+    <img src="assets/images/logo-header.svg" alt="Logo da marca Look da Costura">
+
     <div class="hamburger-menu">
-      <span class="hamburger-menu__icon">icone mobile</span>
-      <div class="hamburger-menu__content">
-        <img src="" alt="Logo da marca Look da Costura">
-        <ul>
-          <li>Sobre nós</li>
-          <li>O que fazemos</li>
-          <li>Galeria</li>
-          <li>A artesã</li>
-          <li>Loja</li>
-          <li>Contatos</li>
-        </ul>
+      <span class="hamburger-menu__icon" role="button">
+        <div></div>
+        <div></div>
+        <div></div>
+      </span>
+      <div class="hamburger-menu__content hide-menu">
+        <div class="hamburguer-menu__close-icon">
+          <span></span>
+          <span></span>
+        </div>
+        <img src="assets/images/logo-header.svg" alt="Logo da marca Look da Costura">
+        <nav class="nav-hamburguer-menu">
+          <ul>
+            <li><a href="#about-us">Sobre nós</a></li>
+            <li><a href="#what-we-do">O que fazemos</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#the-artisan">A artesã</a></li>
+            <li><a href="https://www.instagram.com/lookdacostura" target="_blank">Loja</a></li>
+            <li><a href="#contact">Contatos</a></li>
+          </ul>
+        </nav>
       </div>
+    </div>
+    <div class="desktop-menu">
+      <nav class="nav-desktop-menu">
+        <ul>
+          <li><a href="#about-us">Sobre nós</a></li>
+          <li><a href="#what-we-do">O que fazemos</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#the-artisan">A artesã</a></li>
+          <li><a href="https://www.instagram.com/lookdacostura" target="_blank">Loja</a></li>
+          <li><a href="#contact">Contatos</a></li>
+        </ul>
     </div>
   </header>
 
   <main id="main">
-    <section class="section sobre-nos">
-      <h2 class="title-sobre-nos">Sobre nós</h2>
+    <div class="about-us-what-we-do-wrapper">
+      <section class="section about-us" id="about-us">
+        <div class="title-wrapper">
+          <h2 class="section__title" data-title-color="var(--white)">Sobre nós</h2>
+          <div class="title-effect" data-title-background-color="var(--blue)"></div>
+        </div>
+
+        <p>Somos uma loja de costura criativa, com <mark class="highlight">produtos 100% artesanais</mark>!</p>
+        <p>Por aqui na Look da Costura tudo é feito à mão, com muito carinho e dedicação para você. Juntamos
+          criatividade, moda e qualidade para criar nossos produtos.</p>
+      </section>
+      <div class="divider">
+        <div class="divider__wrapper">
+          <span class="divider__icon"></span>
+        </div>
+      </div>
+      <section class="section what-we-do" id="what-we-do">
+        <div class="title-wrapper">
+          <h2 class="section__title" data-title-color="var(--purple)">O que fazemos</h2>
+          <div class="title-effect" data-title-background-color="var(--pink)"></div>
+        </div>
+        <div class="card" data-card-background-color="var(--pink)" data-card-shadow-color="var(--gold)">
+          <div>
+            <h5>Linha casa</h5>
+            <ul>
+              <li>Toalhas de mesa</li>
+              <li>Sousplat</li>
+              <li>Jogo Americano</li>
+              <li>Organizador de mala</li>
+            </ul>
+          </div>
+
+          <div>
+            <h5>Linha dia a dia</h5>
+            <ul>
+              <li>Bolsa</li>
+              <li>Carteira</li>
+              <li>Necessaire</li>
+              <li>Bolsa tiracolo</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="divider">
+      <div class="divider__wrapper">
+        <span class="divider__icon"></span>
+      </div>
+    </div>
+    <section class="section gallery" id="gallery">
+      <div class="title-wrapper">
+        <h2 class="section__title" data-title-color="var(--purple)">Galeria</h2>
+        <div class="title-effect" data-title-background-color="var(--blue)"></div>
+      </div>
+      <p>Dê uma olhada em algumas das nossas criações:</p>
+      <div class="card" data-card-background-color="var(--blue)" data-card-shadow-color="var(--dark-pink)">
+        <!-- Images will be put here after the development to get the most recent products -->
+        <div class="images-container">
+          <div class="image-wrapper image-1"></div>
+          <div class="image-wrapper image-2"></div>
+          <div class="image-wrapper image-3"></div>
+          <div class="image-wrapper image-4"></div>
+          <div class="image-wrapper image-5"></div>
+          <div class="image-wrapper image-6"></div>
+        </div>
+      </div>
+      <p>Ficou curioso? Acompanhe todo o nosso trabalho mais recente pelo instagram <a
+          href="https://www.instagram.com/lookdacostura" target="_blank"><mark
+            class="highlight--dark">@lookdacostura</mark></a>.</p>
     </section>
-    <section class="section o-que-fazemos">
-      <h2 class="title-o-que-fazemos">O que fazemos</h2>
+    <div class="divider">
+      <div class="divider__wrapper">
+        <span class="divider__icon"></span>
+      </div>
+    </div>
+    <section class="section the-artisan" id="the-artisan">
+      <div class="title-wrapper">
+        <h2 class="section__title" data-title-color="var(--purple)">A artesã</h2>
+        <div class="title-effect" data-title-background-color="var(--dark-pink)"></div>
+      </div>
+      <div class="card" data-card-background-color="var(--dark-pink)" data-card-shadow-color="var(--gold)">
+        <img src="assets/images/the-artisan.png" alt="foto da artesã Márcia">
+        <blockquote class="the-artisan__quote">
+          <h3>Sempre com foco no aprendizado</h3>
+          <p>Nossa querida artesã Marcia vem criando com muito amor produtos exclusivos e de qualidade.</p>
+        </blockquote>
+      </div>
     </section>
-    <section class="section galeria">
-      <h2 class="title-galeria">Galeria</h2>
-    </section>
-    <section class="section a-artesa">
-      <h2 class="title-a-artesa">A artesã</h2>
-    </section>
-    <section class="section contatos">
-      <h2 class="title-contatos">Contatos</h2>
+    <div class="divider">
+      <div class="divider__wrapper">
+        <span class="divider__icon"></span>
+      </div>
+    </div>
+    <section class="section contact" id="contact">
+      <div class="title-wrapper">
+        <h2 class="section__title" data-title-color="var(--white)">Contatos</h2>
+        <div class="title-effect" data-title-background-color="var(--dark-pink)"></div>
+      </div>
+      <div class="contact__container">
+        <div class="concact-infos-map-wrapper">
+          <div class="contact__social-media-area">
+            <div>
+              <a href="https://www.instagram.com/lookdacostura" target="_blank">
+                <img src="./assets/icons/instagram.svg" alt="logo do instagram" width="35">
+                <span>@lookdacostura</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://api.whatsapp.com/send/?phone=5511987834868&text&app_absent=0" target="_blank">
+                <img src="./assets/icons/whatsapp.svg" alt="logo do whatsapp" width="35">
+                <span>(11) 98783-4868</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.facebook.com/lookdacostura" target="_blank">
+                <img src="./assets/icons/facebook.svg" alt="logo do facebook" width="30"
+                  style="padding-left: 0.313rem;">
+                <span style="margin-left: 0.313rem;">@lookdacostura</span>
+              </a>
+            </div>
+            <div>
+              <a href="mailto:contato@lookdacostura.com.br?subject=[INSIRA O ASSUNTO AQUI]&body=[INSIRA A MENSAGEM AQUI]"
+                target="_blank">
+                <img src="./assets/icons/e-mail.svg" alt="ícone de e-mail" width="33" style="padding-left: 0.313rem;">
+                <span style="margin-left: 0.188rem;">contato@lookdacostura.com.br</span>
+              </a>
+            </div>
+          </div>
+          <div class="map-container">
+            <img src="./assets//images/look-da-costura-maps.png" alt="localização da Look da Costura no mapa">
+          </div>
+        </div>
+        <div class="card" data-card-background-color="var(--green)" data-card-shadow-color="var(--gold)">
+          <span class="contact__budget-request">Não perca mais tempo, solicite um orçamento já! 😍</span>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer id="footer">
-    <img src="" alt="Logo da marca Look da Costura">
-    <p>Copyright &copy;</p>
-    <p>Pensado e idealizado por</p>
-    <p>Desenvolvido por</p>
+    <img src="./assets/images/logo-footer.svg" alt="Logo da marca Look da Costura" width="100">
+    <p>Copyright &copy; Look da Costura. Todos os direitos revervados.</p>
+    <div class="developer-credits">
+      <p>Pensado e idealizado por <a class="developer-name" href="https://www.instagram.com/mrmarcianf"
+          target="_blank">Marcia</a> e <a class="developer-name" href="http://thaisnsouza.com" target="_blank">Thais</a>
+      </p>
+      <p>Desenvolvido por <a class="developer-name" href="https://github.com/csvinicius" target="_blank">csvinicius</a>
+        e <a class="developer-name" href="https://github.com/TechWilli" target="_blank">TechWilli</a></p>
+    </div>
   </footer>
 </body>
+
 </html>
