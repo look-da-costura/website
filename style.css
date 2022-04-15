@@ -333,16 +333,54 @@ h2 {
   gap: 1.5rem;
 }
 
-.image-placeholder {
+.image-wrapper {
   height: 15rem;
+  max-width: 15rem;
+  width: 100%;
+  margin: 0 auto;
   font-size: 2rem;
-  display: grid;
+  display: block;
   place-items: center;
   background-color: #f1f1f1;
 }
 
-.image-placeholder:nth-of-type(n+4) {
+.image-wrapper:nth-of-type(n+4) {
   display: none;
+}
+
+.image-1,
+.image-2,
+.image-3,
+.image-4,
+.image-5,
+.image-6 {
+  background-size: cover;
+  background-position: center;
+}
+
+.image-1 {
+  background-image: url("./assets/images/banana-bag.jpeg");
+}
+
+.image-2 {
+  background-image: url("./assets/images/flamingo-bag.jpeg");
+}
+
+.image-3 {
+  background-image: url("./assets/images/jeans-bag.jpeg");
+
+}
+
+.image-4 {
+  background-image: url("./assets/images/jeans-wallet.jpeg");
+}
+
+.image-5 {
+  background-image: url("./assets/images/lemon-kit.jpeg");
+}
+
+.image-6 {
+  background-image: url("./assets/images/shoulder-bag.jpeg");
 }
 
 .the-artisan {
@@ -393,7 +431,7 @@ h2 {
   font-size: 0.875rem;
 }
 
-.contact__social-media-area div {
+.contact__social-media-area div a{
   display: flex;
   margin-bottom: 1.5rem;
   gap: 1rem;
@@ -505,13 +543,26 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* nth-of-type(n+4) selects from the 4th element in n elements */
-  .image-placeholder:nth-of-type(n+4) {
-    display: initial;
-    height: 15rem;
+  .image-wrapper {
+    height: 12rem;
+    max-width: 15rem;
+    width: 100%;
+    margin: 0 auto;
     font-size: 2rem;
-    display: grid;
+    display: block;
     place-items: center;
+    position: relative;
+  }
+
+  /* nth-of-type(n+4) selects from the 4th element in n elements */
+  .image-wrapper:nth-of-type(n+4) {
+    height: 12rem;
+    max-width: 15rem;
+    width: 100%;
+    margin: 0 auto;
+    display: initial;
+    font-size: 2rem;
+    display: block;
     background-color: #f1f1f1;
   }
   
@@ -566,8 +617,32 @@ h2 {
   .nav-desktop-menu > ul li {
     font-family: 'Merienda', cursive;
     color: var(--purple);
+    position: relative;
     font-weight: bold;
     margin-left: 2rem;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .nav-desktop-menu > ul li::before {
+    transition: all 300ms;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.8rem;
+    bottom: 0;
+    z-index: -1;
+    background-color: transparent;
+  }
+
+  .nav-desktop-menu > ul li:hover::before {
+    content: '';
+    position: absolute;
+    width: 3.5rem;
+    height: 0.8rem;
+    bottom: 0;
+    z-index: -1;
+    background-color: #9096AE;
   }
 
   .nav-desktop-menu > ul li a {
@@ -578,6 +653,29 @@ h2 {
 
   .about-us, .what-we-do {
     padding: 5rem;
+  }
+
+  .image-wrapper {
+    height: 15rem;
+    max-width: 15rem;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2rem;
+    display: block;
+    place-items: center;
+    position: relative;
+  }
+
+  /* nth-of-type(n+4) selects from the 4th element in n elements */
+  .image-wrapper:nth-of-type(n+4) {
+    height: 15rem;
+    max-width: 15rem;
+    width: 100%;
+    margin: 0 auto;
+    display: initial;
+    font-size: 2rem;
+    display: block;
+    background-color: #f1f1f1;
   }
 }
 
@@ -590,5 +688,53 @@ h2 {
     gap: 2rem;
     padding: 3rem;
     margin: 0 auto;
+  }
+
+  .image-wrapper {
+    height: 20rem;
+    max-width: 20rem;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2rem;
+    display: block;
+    place-items: center;
+    position: relative;
+  }
+
+  /* nth-of-type(n+4) selects from the 4th element in n elements */
+  .image-wrapper:nth-of-type(n+4) {
+    height: 20rem;
+    max-width: 20rem;
+    width: 100%;
+    margin: 0 auto;
+    display: initial;
+    font-size: 2rem;
+    display: block;
+    background-color: #f1f1f1;
+  }
+}
+
+@media (min-width: 1920px) {
+  .image-wrapper {
+    height: 30rem;
+    max-width: 30rem;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2rem;
+    display: block;
+    place-items: center;
+    position: relative;
+  }
+
+  /* nth-of-type(n+4) selects from the 4th element in n elements */
+  .image-wrapper:nth-of-type(n+4) {
+    height: 30rem;
+    max-width: 30rem;
+    width: 100%;
+    margin: 0 auto;
+    display: initial;
+    font-size: 2rem;
+    display: block;
+    background-color: #f1f1f1;
   }
 }
