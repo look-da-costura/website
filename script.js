@@ -4,7 +4,7 @@ const sectionTitleTexts = document.querySelectorAll('.section__title');
 const menuContent = document.querySelector('.hamburger-menu__content');
 const menuIcon = document.querySelector('.hamburger-menu__icon');
 const menuCloseIcon = document.querySelector('.hamburguer-menu__close-icon');
-const navHamburguerMenu = document.querySelector('.nav-hamburguer-menu ul');
+const navHamburguerMenuItems = document.querySelectorAll('.nav-hamburguer-menu ul li a');
 const hamgurguerMenuContainer = document.querySelector('.hamburger-menu');
 const header = document.querySelector('#header');
 const desktopMenu = document.querySelector('.desktop-menu');
@@ -23,30 +23,12 @@ sectionTitleTexts.forEach(titleText => {
   titleText.style.color = titleText.dataset.titleColor;
 })
 
-function showMenu() {
-  menuContent.classList.remove('hide-menu');
-  menuContent.classList.remove('hide-menu-animation');
-  document.body.style.overflow = 'hidden';
-};
-
-function hideMenu() {
-  menuContent.classList.add('hide-menu-animation');
-  document.body.style.overflow = 'initial';
-};
-
 menuIcon.addEventListener('click', showMenu);
 menuCloseIcon.addEventListener('click', hideMenu);
 
-// console.log(typeof navHamburguerMenu.children);
-// navHamburguerMenu.children.forIn(menuItem => {
-//   menuItem.onclick = hideMenu();
-//   console.log(menuItem);
-// });
-
-for (let key in navHamburguerMenu.children) {
-  console.log(navHamburguerMenu.children[key]);
-  navHamburguerMenu.children[key].onclick = hideMenu;
-};
+navHamburguerMenuItems.forEach(menuItem => {
+  menuItem.onclick = hideMenu;
+});
 
 window.addEventListener('resize', (event) => {
   if(event.target.innerWidth >= 1024) {
@@ -65,3 +47,13 @@ window.addEventListener('resize', (event) => {
   }
 });
 
+function showMenu() {
+  menuContent.classList.remove('hide-menu');
+  menuContent.classList.remove('hide-menu-animation');
+  document.body.style.overflow = 'hidden';
+};
+
+function hideMenu() {
+  menuContent.classList.add('hide-menu-animation');
+  document.body.style.overflow = 'initial';
+};
